@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "@/components/navigation/nav";
+import { ThemeContextProvider } from "@/context/themeContext";
 
 const font = League_Spartan({ subsets: ["latin"] });
 
@@ -16,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <ThemeContextProvider>
+        <body
+          className={`h-screen lg:w-screen flex flex-col md:flex-row ${font.className}`}
+        >
+          <Navigation />
+          {children}
+        </body>
+      </ThemeContextProvider>
     </html>
   );
 }
