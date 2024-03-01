@@ -6,8 +6,10 @@ export const EmptyList = () => {
       <Image
         src={"/images/empty.svg"}
         alt="no-documents-in-here"
-        height={240}
+        height={160}
         width={240}
+        priority
+        className="h-auto"
       />
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="text-heading-m text-dark-navy dark:text-white">
