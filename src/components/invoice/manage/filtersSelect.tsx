@@ -1,0 +1,12 @@
+import { Chevron } from "@/components/icons/chevron";
+
+export const FiltersSelect = () => {
+  return (
+    <button className="bg-transparent border-none flex gap-2 justify-center items-center">
+      <p className="text-heading-s-variant dark:text-white text-dark-navy">
+        Filter
+      </p>
+      <Chevron />
+    </button>
+  );
+};
