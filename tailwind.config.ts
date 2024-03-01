@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#7V5DFA",
+        primary: "#7C5DFA",
         secondary: "#9277FF",
         "dark-blue-gray": "#1E2139",
         "midnight-blue": "#252945",
@@ -21,6 +21,9 @@ const config: Config = {
         "pale-pink": "#9277FF",
         "light-bg": "#F8F8F8",
         charcoal: "#141625",
+        "midnight-gray": "#979797",
+        "shadow-navy": "#373B53",
+        "light-navy": "#494E6E",
       },
       fontSize: {
         "heading-l": [
@@ -75,5 +78,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: ["class"],
 };
 export default config;
