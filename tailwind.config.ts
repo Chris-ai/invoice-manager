@@ -24,6 +24,9 @@ const config: Config = {
         "midnight-gray": "#979797",
         "shadow-navy": "#373B53",
         "light-navy": "#494E6E",
+        "draft-label": "#33D69F",
+        "paid-label": "#373B53",
+        "pending-label": "#FF8F00",
       },
       fontSize: {
         "heading-l": [
