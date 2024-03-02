@@ -1,4 +1,5 @@
 export type Invoice = {
+  id: number;
   supplier: {
     address: Address;
   };
@@ -22,13 +23,13 @@ type Address = {
   country: string;
 };
 
-type InvoiceItem = {
+export type InvoiceItem = {
   name: string;
   qty: number;
   price: number;
 };
 
-enum Status {
+export enum Status {
   DRAFT = "Draft",
   PENDING = "Pending",
   PAID = "Paid",

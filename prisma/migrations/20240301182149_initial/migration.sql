@@ -13,8 +13,10 @@ CREATE TABLE "Invoice" (
     "clientAddressCity" TEXT NOT NULL,
     "clientAddressPostCode" TEXT NOT NULL,
     "clientAddressCountry" TEXT NOT NULL,
-    "creationDate" TIMESTAMP(3) NOT NULL,
-    "paymentTerms" TEXT NOT NULL,
+    "invoiceDate" TIMESTAMP(3) NOT NULL,
+    "paymentDue" TIMESTAMP(3) NOT NULL,
+    "status" TEXT NOT NULL,
+    "amountDue" INTEGER NOT NULL,
     "description" TEXT NOT NULL,
     "itemsApplied" JSONB NOT NULL,
 
