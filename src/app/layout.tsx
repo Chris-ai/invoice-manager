@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { League_Spartan } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navigation } from "@/components/navigation/nav";
 import { ThemeContextProvider } from "@/context/themeContext";
+import { Navbar } from "@/components/navigation/navbar";
+import { Sidebar } from "@/components/navigation/sidebar";
 
-const font = League_Spartan({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,11 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeContextProvider>
-        <body
-          className={`h-screen lg:w-screen flex flex-col md:flex-row ${font.className}`}
-        >
-          <Navigation />
-          {children}
+        <body className={`${font.className}`}>
+          <Navbar />
+          <main className="lg:flex h-full w-full">
+            <Sidebar />
+            {children}
+          </main>
         </body>
       </ThemeContextProvider>
     </html>
