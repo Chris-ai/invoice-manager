@@ -1,5 +1,7 @@
+import { ArrowRight } from "@/components/icons/arrowRight";
 import { StatusLabel } from "@/components/status";
 import { Invoice, Status } from "@/data/types";
+import Link from "next/link";
 
 export const InvoiceListElement: React.FC<{ invoice: Invoice }> = ({
   invoice,
@@ -70,6 +72,9 @@ export const DesktopListElement: React.FC<InvoiceListElement> = ({
       <p>{name}</p>
       <p className="text-heading-s">£ {amountDue}</p>
       <StatusLabel status={status} />
+      <Link href={"/"}>
+        <ArrowRight />
+      </Link>
     </div>
   );
 };
