@@ -8,7 +8,7 @@ export const InvoiceList: React.FC<{ invoices: Invoice[] }> = ({
   if (invoices.length === 0) return <EmptyList />;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-3">
       {invoices.map((invoice: Invoice) => (
         <InvoiceListElement key={invoice.id} invoice={invoice} />
       ))}

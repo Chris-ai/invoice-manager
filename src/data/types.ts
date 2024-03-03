@@ -34,3 +34,9 @@ export enum Status {
   PENDING = "Pending",
   PAID = "Paid",
 }
+
+export enum Currency {
+  USD = "$",
+  GBP = "£",
+  PLN = "PLN",
+}
