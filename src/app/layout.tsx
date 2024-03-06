@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeContextProvider>
-        <body className={`${font.className}`}>
+        <body className={`${font.className} min-h-screen`}>
           <Navbar />
-          <main className="lg:flex h-full w-full">
+          <main className="lg:flex min-h-screen w-full">
             <Sidebar />
             {children}
           </main>
