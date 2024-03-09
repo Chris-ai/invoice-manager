@@ -16,7 +16,7 @@ export type Invoice = {
   itemsApplied: InvoiceItem[];
 };
 
-type Address = {
+export type Address = {
   streetAddress: string;
   city: string;
   postCode: string;
