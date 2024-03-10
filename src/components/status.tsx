@@ -1,4 +1,3 @@
-"use client";
 import { Status } from "@/data/types";
 
 export const StatusLabel: React.FC<{ status: Status }> = ({ status }) => {
@@ -29,7 +28,7 @@ export const StatusLabel: React.FC<{ status: Status }> = ({ status }) => {
       className={`w-[104px] py-3 flex gap-2 items-center justify-center ${statusColorClassName()} ${statusColorText()} rounded-lg bg-opacity-10`}
     >
       <div className={`h-2 w-2 rounded-full ${statusColorClassName()}`} />
-      {status}
+      <p className="text-heading-s">{status}</p>
     </div>
   );
 };
