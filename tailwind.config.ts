@@ -24,8 +24,8 @@ const config: Config = {
         "midnight-gray": "#979797",
         "shadow-navy": "#373B53",
         "light-navy": "#494E6E",
-        "draft-label": "#33D69F",
-        "paid-label": "#373B53",
+        "paid-label": "#33D69F",
+        "draft-label": "#373B53",
         "pending-label": "#FF8F00",
       },
       fontSize: {
@@ -77,6 +77,9 @@ const config: Config = {
             fontWeight: "500",
           },
         ],
+      },
+      boxShadow: {
+        custom: "0px 10px 10px -10px rgba(72, 84, 159, 0.1)",
       },
     },
   },
