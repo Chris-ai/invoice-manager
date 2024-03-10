@@ -9,7 +9,7 @@ export const fetchInvoices = async (): Promise<Invoice[]> => {
 
 export const fetchInvoicebyId = async (id: number): Promise<Invoice> => {
   const response: InvoiceDTO = await db.invoice.findUnique({
-    where: { id: id },
+    where: { id },
   });
 
   return fromJson(response);
