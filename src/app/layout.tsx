@@ -22,7 +22,7 @@ export default function RootLayout({
       <ThemeContextProvider>
         <body className={`${font.className} min-h-screen`}>
           <Navbar />
-          <main className="lg:flex min-h-screen w-full">
+          <main className="lg:flex min-h-screen w-full bg-light-bg dark:bg-charcoal dark:text-white">
             <Sidebar />
             {children}
           </main>
