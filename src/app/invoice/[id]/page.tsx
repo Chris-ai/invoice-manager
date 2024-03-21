@@ -18,7 +18,7 @@ export default async function InvoicePage({ params }: PageProps) {
         <GoBackButton />
       </div>
       <div className="flex flex-col w-full max-w-[730px] gap-y-8 sm:gap-y-13 lg:gap-y-16">
-        <InvoiceDetailsHeader status={Status.PAID} />
+        <InvoiceDetailsHeader status={invoice.status} />
         <InvoiceDetails invoice={invoice} />
       </div>
     </section>
